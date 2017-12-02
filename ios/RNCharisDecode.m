@@ -60,12 +60,10 @@ RCT_EXPORT_METHOD(decodeLesson:(NSString *)path
         }
 
         [file closeFile];
+        resolve(@(decoded));
     }
     else
-        reject(@"File is read only", @"file to decode is read only", nil);
-
-    resolve(@(decoded));
-
+        reject(@"not_found", @"File not found or is read only", nil);
 }
 
 @end
