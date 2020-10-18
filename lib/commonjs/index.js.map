@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.tsx"],"names":["RnCharis","NativeModules"],"mappings":";;;;;;;AAAA;;AAMA,MAAM;AAAEA,EAAAA;AAAF,IAAeC,0BAArB;eAEeD,Q","sourcesContent":["import { NativeModules } from 'react-native';\n\ntype RnCharisType = {\n  multiply(a: number, b: number): Promise<number>;\n};\n\nconst { RnCharis } = NativeModules;\n\nexport default RnCharis as RnCharisType;\n"]}
